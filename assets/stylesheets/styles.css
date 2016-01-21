@@ -1,36 +1,4 @@
-body {
-	background-color: #00cc99;
-}
-
-.header {
-	height: 100px;
-	width: 1000px;
-	border: 2px solid black;
-	text-align: center;
-	margin: 20px 10px 20px 10px;
-
-}
-
-#content {
-	margin-left: 20px;
-
-}
-
-p {
-	width: 800px;
-	text-align: justify;
-	margin: 10px 10px 20px 100px;
-	
-
-}
-
-.footer {
-	height: 40px;
-	width: 1000px;
-	border: 2px solid black;
-	font: 10px;
-	text-align: center;
-	margin: 5px auto;
-
+.jumbotron {
+	background-color: #50a2a7;
 
 }
