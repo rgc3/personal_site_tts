@@ -7,6 +7,10 @@
     color: white;
 }
 
+img {
+    margin-top: 10px;
+}
+
 body {
 	background-color: #3E92CC;
 }
