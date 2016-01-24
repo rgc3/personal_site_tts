@@ -1,10 +1,14 @@
-#container {
-	border-bottom: 8px solid #13293D;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	clear: both;
-	background-color: #18435A;
+#header {
+    border-bottom: 8px solid #13293D;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    clear: both;
+    background-color: #18435A;
+    color: white;
+}
 
+body {
+	background-color: #3E92CC;
 }
 
 #footer {
@@ -13,4 +17,6 @@
     padding-bottom: 20px;
     clear: both;
     background-color: #18435A;
+    height: 60px;
 }
+
