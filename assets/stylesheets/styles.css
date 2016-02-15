@@ -1,9 +1,9 @@
-.jumbotron {
-	background-color: #18435A;
-	color: white;
-
+body {
+	background-color: #c4daf2;
 }
 
-body {
-	background-color: #3E92CC;
+.footer {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
