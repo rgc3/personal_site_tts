@@ -1,21 +1,28 @@
 body {
-	background-color: #c8d7de;
+	background-color: #f2f6fd;
 }
 
-img {
+.head {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
-}
-
-.social {
-	max-height: 100px;
-	display: inline;
 }
 
 .footer {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+header {
+	margin-top: -10px;
+}
+
+li {
+	display: inline-block;
+}
+
+img {
+	width: 100px;
 }
