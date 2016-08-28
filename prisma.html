@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="Robert Dizzo's Prisma Photos.">
+    <meta name="author" content="Robert G. Cunningham">
+    <link rel="icon" href="">
 
     <title>My Prisma Photos</title>
 
@@ -17,8 +17,11 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="assets/stylesheets/prismastyle.css" rel="stylesheet">
+
+    <!-- Blueimp Gallery styles -->
+    <link rel="stylesheet" href="stylesheets/blueimp/blueimp-gallery.min.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,21 +49,37 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h1>I love the Prisma App!</h1>
+        <p class="lead">This app rocks! I have 15 years of photos that I want to pass through the app. Here I will share some with you.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+          <div id="blueimp-gallery" class="blueimp-gallery">
+              <div class="slides"></div>
+              <h3 class="title"></h3>
+              <a class="prev">‹</a>
+              <a class="next">›</a>
+              <a class="close">×</a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+          </div>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <div id="links">
+            <a href="assets/img/prisma/IMG_047.jpg" title="">
+                <img src="assets/img/prisma/IMG_047.jpg" alt="" height="200px">
+            </a>
+            <a href="assets/img/prisma/IMG_103.jpg" title="">
+                <img src="assets/img/prisma/IMG_103.jpg" alt="" height="200px">
+            </a>
+            <a href="assets/img/prisma/IMG_127.jpg" title="">
+                <img src="assets/img/prisma/IMG_127.jpg" alt="" height="200px">
+            </a>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+
         </div>
 
         <div class="col-lg-6">
@@ -83,9 +102,24 @@
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Blueimp Gallery Script -->
+    <script src="js/blueimp/blueimp-gallery.min.js"></script>
+
+    <script>
+    document.getElementById('links').onclick = function (event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+      blueimp.Gallery(links, options);
+    };
+    </script>
+
   </body>
 </html>
