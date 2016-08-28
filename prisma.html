@@ -20,9 +20,6 @@
     <!-- Custom styles -->
     <link href="assets/stylesheets/prismastyle.css" rel="stylesheet">
 
-    <!-- Blueimp Gallery styles -->
-    <link rel="stylesheet" href="stylesheets/blueimp/blueimp-gallery.min.css">
-
     <!-- Fotorama Css -->
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
@@ -59,31 +56,7 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4>Blueimp Gallery</h4>
-          <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-          <div id="blueimp-gallery" class="blueimp-gallery">
-              <div class="slides"></div>
-              <h3 class="title"></h3>
-              <a class="prev">‹</a>
-              <a class="next">›</a>
-              <a class="close">×</a>
-              <a class="play-pause"></a>
-              <ol class="indicator"></ol>
-          </div>
-
-          <div id="links">
-            <a href="assets/img/prisma/IMG_047.jpg" title="">
-                <img src="assets/img/prisma/IMG_047.jpg" alt="" height="200px">
-            </a>
-            <a href="assets/img/prisma/IMG_103.jpg" title="">
-                <img src="assets/img/prisma/IMG_103.jpg" alt="" height="200px">
-            </a>
-            <a href="assets/img/prisma/IMG_127.jpg" title="">
-                <img src="assets/img/prisma/IMG_127.jpg" alt="" height="200px">
-            </a>
-
-          </div>
-
+          <h4>Blueimp Gallery Removed</h4>
         </div>
 
         <div class="col-lg-6">
@@ -111,20 +84,6 @@
 
     <!-- jquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <!-- Blueimp Gallery Script -->
-    <script src="js/blueimp/blueimp-gallery.min.js"></script>
-
-    <script>
-    document.getElementById('links').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-      blueimp.Gallery(links, options);
-    };
-    </script>
 
     <!-- fotorama.js. -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
