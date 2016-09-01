@@ -2,27 +2,6 @@ body {
 	background-color: #f2f6fd;
 }
 
-.head {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.footer {
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-header {
-	margin-top: -10px;
-}
-
 li {
 	display: inline-block;
-}
-
-img {
-	width: 100px;
 }
