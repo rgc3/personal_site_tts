@@ -2,6 +2,16 @@ body {
 	background-color: #f2f6fd;
 }
 
+#header {
+    border-bottom: 8px solid #13293D;
+    height: 300px;
+    background-color: #18435A;
+    background-image: url('../img/keys_bridge_2048x600.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 li {
 	display: inline-block;
 }
