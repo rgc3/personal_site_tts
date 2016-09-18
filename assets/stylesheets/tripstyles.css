@@ -6,6 +6,18 @@
   margin-top: 1em;
 }
 
+h1, h4 {
+  font-family: 'Rancho', cursive;
+}
+
+h5, p {
+  font-family: 'Gudea', sans-serif;
+}
+
+.font2 {
+  font-family: 'Gudea', sans-serif;
+}
+
 @media (max-width: 1024px) {
   img {
     margin-bottom: 1em;
