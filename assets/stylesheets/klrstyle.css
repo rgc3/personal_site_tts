@@ -1,0 +1,14 @@
+/*font-family: 'Rancho', cursive;
+font-family: 'Gudea', sans-serif;*/
+
+.font1 {
+  font-family: 'Rancho', cursive;
+}
+
+.font2 {
+  font-family: 'Gudea', sans-serif;
+}
+
+p {
+  font-family: 'Gudea', sans-serif;
+}
